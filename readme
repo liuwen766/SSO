@@ -1,0 +1,17 @@
+
+
+登录测试：
+step1:
+访问淘宝页面，输入:
+http://localhost:8081/taobao
+会验证token，若token为空，返回登录页面
+username:admin  password:123123
+登录成功后，
+step2:
+访问天猫页面，输入:
+http://localhost:8082/tmall
+验证token，若token正确，直接登录天猫页面（不用再输入用户名，密码）
+
+登出测试:
+step1:在两个页面已登录状态，任意退出登录一个页面；
+step2:刷新另一个页面，页面自动登出。
