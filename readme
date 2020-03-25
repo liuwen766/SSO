@@ -6,7 +6,7 @@ step1:
 http://localhost:8081/taobao
 会验证token，若token为空，返回登录页面
 username:admin  password:123123
-登录成功后，
+登录成功后
 step2:
 访问天猫页面，输入:
 http://localhost:8082/tmall

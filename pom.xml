@@ -7,6 +7,12 @@
         <module>sso_client_taobao</module>
         <module>sso_client_tmall</module>
         <module>sso_server</module>
+        <module>sso_client_tmall</module>
+        <module>sso_client_tmall</module>
+        <module>sso_client_tmall</module>
+        <module>test</module>
+        <module>sso_client_tmall</module>
+        <module>sso_tmall</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -24,7 +24,6 @@ import java.util.UUID;
 @Controller
 @Slf4j
 public class ServerHandler {
-
     /**
      * @Description:     第一次登陆验证token
      * @date 20.3.23 12:39
@@ -44,14 +43,13 @@ public class ServerHandler {
                 if(cookie.getValue().equals(token)){  //验证token是否相等
                     //验证通过，返回客户端
                     log.info("token验证通过");
-
+                    return "redirect:"+redirectUrl+"?token="+token;
                 }
             }
         }
         model.addAttribute("redirectUrl",redirectUrl);
         return "login";   //验证不通过，则直接返回登录页面。走step6
     }
-
     /**
      * @Description:   登陆验证
      * @date 20.3.23 13:02
