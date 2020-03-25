@@ -97,6 +97,7 @@ public class ServerHandler {
         return "false";
     }
 
+    //step16
     @RequestMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();

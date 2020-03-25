@@ -22,7 +22,7 @@ public class TaobaoHandler {
         return "index";
     }
 
-    //step11:开始走单点登出业务（到服务器，将session的token删除）
+    //step15:开始走单点登出业务（到服务器（登录成功的时候已经把登出地址带过来了），将session的token删除）
     @RequestMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();
