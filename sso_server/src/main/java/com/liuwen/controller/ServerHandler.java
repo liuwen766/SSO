@@ -97,6 +97,12 @@ public class ServerHandler {
         return "false";
     }
 
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "login";
+    }
+
 
 
 }
